@@ -20,11 +20,9 @@
 function cartaNumerada(menu) {
   const resultado = []
 
-  for(let i = 0; i < menu .length; i++) {
+  for(let i = 0; i < menu.length; i++) {
     const plato = menu[i];
-
-    const textoPlato = `${i}. ${plato.nombre} * $${plato.precio}`;
-
+    const textoPlato = `${i}. ${plato.nombre} · $${plato.precio}`;
     resultado.push(textoPlato);
   }
 
